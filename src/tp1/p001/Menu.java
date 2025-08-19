@@ -1,10 +1,9 @@
-package tp1.p01;
+package tp1.p001;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Menu {
-
     private ArrayList<CuentaBancaria> cuentas = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
 
@@ -113,5 +112,4 @@ public class Menu {
         Menu menu = new Menu();
         menu.iniciarMenu();
     }
-
 }
