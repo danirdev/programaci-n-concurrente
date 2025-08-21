@@ -158,4 +158,16 @@ public class Helper {
     public static String[] getEnumNames(Class<? extends Enum<?>> e) {
         return Arrays.toString(e.getEnumConstants()).replaceAll("^.|.$", "").split(", ");
     }
+
+    //endregion
+
+    public static char yesOrNo(String mensaje) {
+        Scanner scanner = new Scanner(System.in);
+        String respuesta;
+        do {
+            System.out.print(mensaje + " ");
+            respuesta = scanner.nextLine().trim().toUpperCase();
+        } while (!respuesta.equals("SI") && !respuesta.equals("NO"));
+        return respuesta.equals("SI") ? 'S' : 'N';
+    }
 }
