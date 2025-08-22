@@ -3,6 +3,7 @@ package tp1.p01;
 public class CuentaBancaria {
 
     // Atributos
+    
     private static long ultimoNumeroCuenta = 100000;
     private long numeroCuenta;
     private long dni;
@@ -10,6 +11,7 @@ public class CuentaBancaria {
     private double interesAnual;
 
     // Constructores
+
     public CuentaBancaria() {
         this.numeroCuenta = ++ultimoNumeroCuenta;
         this.dni = 0;
