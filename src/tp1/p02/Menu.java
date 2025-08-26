@@ -10,7 +10,7 @@ public class Menu {
     public void iniciarMenu() {
         int opcion;
         do {
-            System.out.println("\n--- MENÚ CUENTA SUELDO ---");
+            System.out.println("\n--- MENÚ ---");
             System.out.println("1. Crear nueva cuenta sueldo");
             System.out.println("2. Retirar dinero");
             System.out.println("3. Transferir por CBU");
@@ -140,8 +140,4 @@ public class Menu {
         }
     }
 
-    public static void main(String[] args) {
-        Menu menu = new Menu();
-        menu.iniciarMenu();
-    }
 }
